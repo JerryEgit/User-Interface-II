@@ -161,3 +161,56 @@ footer a {
  justify-content: center;
  color:honeydew;
 }
+
+/* my media queries */
+@media(max-width: 800px) {
+    nav {
+        flex-direction: column;
+        
+    } 
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    } 
+
+    .sec {
+        display: flex;
+    } 
+
+    .sec .imgs {
+        margin: 5%;
+    } 
+
+    .sec .imgs {
+        margin: 2% 5%;
+    }
+
+    .name {
+        margin:0 0 0 0;
+    }
+}
+
+@media(max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .sec {
+        display: flex;
+    } 
+
+    .sec .imgs {
+        margin: 5%;
+    } 
+
+    .sec .imgs {
+        margin: 2% 5%;
+    }
+
+    .name {
+        margin: 0 0 0 0;
+    }
+}
