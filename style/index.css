@@ -1,1 +1,214 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border: 2px solid black;
+} */
+/*General Styles*/
+html {
+    font-size: 62.5%;/*Due to this font-size %, every 1rem = 10 pixels.*/
+}
+body {
+    font-size: 1.8rem;
+    color: #4F4F4F;
+    line-height: 1.5;
+    background-color: rgb(135, 141, 119);
+}
+h1 {
+    font-size: 5rem; 
+}
+h2 {
+    font-size: 3.5rem;
+}
+section {
+    padding: 4% 0;/*Adds top and bottom padding of 4% between sections.*/
+}
+a {
+    text-decoration: none; /*Removes underline from links*/
+    /* color: #4F4F4F;  */
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.rr {
+    display: flex;
+     justify-content: flex-end;
+    align-items: center;
+    top:0%;
+    width: 100%;
+}
+
+.name{
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
+    color: #2c2b2b;
+    margin-right:34%;
+}
+
+.main h2 p {
+    display:flex;
+    
+    
+    
+}
+.main {
+    background-image: url('https://images.unsplash.com/photo-1620188707277-bdf360ebea21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80');
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5% 5%;
+}
+
+.main h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 8rem;
+    color: white;
+}
+
+.main h2 {
+    font-size: 5rem;
+    color: white;
+}
+
+.links{
+    width: 50%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.links a {
+    padding: 1% 4%;
+    background-color: red;
+    color:teal;
+   
+}
+
+
+.sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+  .imgs {
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    width:30%;
+}  
+
+footer a {
+    display:flex;
+ justify-content: center;
+ color:honeydew;
+}
+
+/* my media queries */
+@media(max-width: 800px) {
+    nav {
+        flex-direction: column;
+        
+    } 
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    } 
+
+    .sec {
+        display: flex;
+    } 
+
+    .sec .imgs {
+        margin: 5%;
+    } 
+
+    .sec .imgs {
+        margin: 2% 5%;
+    }
+
+    .name {
+        margin:0 0 0 0;
+    }
+}
+
+@media(max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .sec {
+        display: flex;
+    } 
+
+    .sec .imgs {
+        margin: 5%;
+    } 
+
+    .sec .imgs {
+        margin: 2% 5%;
+    }
+
+    
+}
